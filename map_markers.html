@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ecdf7469b3234337aff5969918a946f4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ecdf7469b3234337aff5969918a946f4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ecdf7469b3234337aff5969918a946f4 = L.map(
+                                  'map_ecdf7469b3234337aff5969918a946f4',
+                                  {center: [17.454372,78.423417],
+                                  zoom: 35,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1b28d2519cbf4b38b26afa873ff75f5f = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ecdf7469b3234337aff5969918a946f4);
+        
+    
+            var feature_group_f26a9164b73c4f0aa57e14d4b6965da1 = L.featureGroup(
+                ).addTo(map_ecdf7469b3234337aff5969918a946f4);
+        
+    
+
+            var marker_e617a26180664d6aa3f8517dd9792126 = L.marker(
+                [17.454372,78.423417],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_f26a9164b73c4f0aa57e14d4b6965da1);
+            
+    
+
+                var icon_df37116bb808431daa5a64a26a782677 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e617a26180664d6aa3f8517dd9792126.setIcon(icon_df37116bb808431daa5a64a26a782677);
+            
+    
+            var popup_5420d1b155c24bfdb3efc1a44fc48ea6 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc16d0830c6e47d691db811a4a0347ae = $('<div id="html_dc16d0830c6e47d691db811a4a0347ae" style="width: 100.0%; height: 100.0%;">I am home</div>')[0];
+                popup_5420d1b155c24bfdb3efc1a44fc48ea6.setContent(html_dc16d0830c6e47d691db811a4a0347ae);
+            
+
+            marker_e617a26180664d6aa3f8517dd9792126.bindPopup(popup_5420d1b155c24bfdb3efc1a44fc48ea6);
+
+            
+        
+    
+
+            var marker_983316302f8f4b67bf4f3ccae3f26b28 = L.marker(
+                [17.45429,78.423404],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_f26a9164b73c4f0aa57e14d4b6965da1);
+            
+    
+
+                var icon_6a9c9150b309486db660e02d4143ab5a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_983316302f8f4b67bf4f3ccae3f26b28.setIcon(icon_6a9c9150b309486db660e02d4143ab5a);
+            
+    
+            var popup_dbb6d97dc4c342f98d0c2d4f24ed35bd = L.popup({maxWidth: '300'});
+
+            
+                var html_8f1aef281644417f973d5c2585b10c27 = $('<div id="html_8f1aef281644417f973d5c2585b10c27" style="width: 100.0%; height: 100.0%;">Rayudu Tiffins</div>')[0];
+                popup_dbb6d97dc4c342f98d0c2d4f24ed35bd.setContent(html_8f1aef281644417f973d5c2585b10c27);
+            
+
+            marker_983316302f8f4b67bf4f3ccae3f26b28.bindPopup(popup_dbb6d97dc4c342f98d0c2d4f24ed35bd);
+
+            
+        
+</script>
